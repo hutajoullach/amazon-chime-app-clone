@@ -8,11 +8,11 @@ export default function LeftSidebar() {
       <div className="leftSidebarWrapper">
         <ul className="leftSidebarList">
           <li className="leftSidebarListItem">
-            <div className="leftSidebarIcon"></div>
+            <i class="leftSidebarIcon material-icons">chat_bubble_outline</i>
             <span className="leftSidebarListItemText">Feed</span>
           </li>
           <li className="leftSidebarListItem">
-            <div className="leftSidebarIcon"></div>
+            <i class="leftSidebarIcon material-icons">chat_bubble_outline</i>
             <span className="leftSidebarListItemText">Booking</span>
           </li>
         </ul>

@@ -23,7 +23,8 @@
 .loginLogo {
   font-size: 50px;
   font-weight: 800;
-  color: #1775ee;
+  /* color: #1775ee; */
+  color: #00684A;
   margin-bottom: 10px;
 }
 
@@ -56,9 +57,13 @@
 .loginButton {
   height: 50px;
   border-radius: 10px;
-  border: none;
-  background-color: #1775ee;
-  color: white;
+  /* border: none; */
+  border: 2px solid #00684A;
+  /* background-color: #1775ee; */
+  /* background-color: #00684A; */
+  background-color: #FCFCFC;
+  /* color: white; */
+  color: #00684A;
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
@@ -66,7 +71,10 @@
 
 .loginForgot {
   text-align: center;
-  color: #1775ee;
+  /* color: #1775ee; */
+  /* color: #00684A; */
+  color: gray;
+  cursor: pointer;
 }
 
 .loginRegisterButton {
@@ -75,7 +83,8 @@
   height: 50px;
   border-radius: 10px;
   border: none;
-  background-color: #42b72a;
+  /* background-color: #42b72a; */
+  background-color: #00684A;
   color: white;
   font-size: 20px;
   font-weight: 500;

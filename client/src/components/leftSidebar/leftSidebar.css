@@ -37,10 +37,16 @@
   cursor: pointer;
 }
 
+.leftSidebarIcon {
+  color: #FFFFFF;
+  margin-left: 10px;
+}
+
 .leftSidebarListItemText {
+  color: #FFFFFF;
   font-size: 13px;
   font-weight: 500;
-  color: #FFFFFF;
+  margin-left: 6px;
 }
 
 .leftSidebarButton {

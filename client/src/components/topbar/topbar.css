@@ -20,11 +20,21 @@
 .topbarLeftTitleWrapper {
   margin: 0 7px 0 0;
   min-width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topbarRoomIcon {
+  margin: 0 15px;
+  color: #4F5660;
+  user-select: none;
 }
 
 .topbarLeftTitle {
   display: flex;
   align-items: center;
+  user-select: none;
 }
 
 .topbarLeftFollowButton {
@@ -41,34 +51,6 @@
   background-color: #007A57;
 }
 
-.searchbar {
-  width: 100%;
-  height: 28px;
-  background-color: #E3E5E8;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-}
-
-/* .searchbar:focus {
-  transition: width .25s ease-in-out;
-} */
-
-.searchInput {
-  border: none;
-  width: 70%;
-  margin-left: 4px;
-  background-color: transparent;
-}
-
-.searchInput::placeholder {
-  color: #4F5660;
-}
-
-.searchInput:focus {
-  outline: none;
-}
-
 .topbarRight {
   flex: 0 0 auto;
   display: flex;
@@ -77,22 +59,26 @@
   color: white;
 }
 
-.topbarLink {
+/* .topbarLink {
   margin-right: 10px;
   font-size: 14px;
   cursor: pointer;
-}
+} */
 
 .topbarIcons {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .topbarIconItem {
+  color: #4F5660;
   margin-right: 15px;
-  cursor: pointer;
   position: relative;
-  width: 32px;
-  height: 32px;
+  cursor: pointer;
+  user-select: none;
+  /* width: 32px;
+  height: 32px; */
 }
 
 .topbarImg {
@@ -101,4 +87,40 @@
   border-radius: 50%;
   object-fit: cover;
   cursor: pointer;
+}
+
+.topbarSearch {
+  width: 100%;
+  height: 28px;
+  background-color: #E3E5E8;
+  border-radius: 4px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .topbarSearch:focus {
+  transition: width .25s ease-in-out;
+} */
+
+.topbarSearchInput {
+  border: none;
+  width: 100%;
+  height: 100%;
+  margin-left: 4px;
+  background-color: transparent;
+}
+
+.topbarSearchInput::placeholder {
+  color: #4F5660;
+}
+
+.topbarSearchInput:focus {
+  outline: none;
+}
+
+.topbarSearchIcon {
+  color: #93989F;
+  margin-right: 3px;
 }
