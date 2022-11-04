@@ -1,0 +1,42 @@
+.rightSidebarFriend {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 46px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding-left: 7px;
+  cursor: pointer;
+}
+
+.rightSidebarFriend:hover {
+  background-color: #D9DEE2;
+}
+
+.rightSidebarProfileImgContainer {
+  margin-right: 13px;
+  position: relative;
+}
+
+.rightSidebarProfileImg {
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.rightSidebarOnline {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: #3BA55D;
+  position: absolute;
+  /* top: -2px; */
+  bottom: 2.5px;
+  right: -2px;
+  border: 3.5px solid #F2F3F5;
+}
+
+.rightSidebarUsername {
+  font-weight: 500;
+}

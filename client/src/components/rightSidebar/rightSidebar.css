@@ -1,0 +1,36 @@
+.rightSidebar {
+  flex: 2.5;
+  height: calc(100vh - 50px);
+  overflow-y: scroll;
+  background-color: #F2F3F5;
+}
+
+.rightSidebarWapper {
+  padding: 0 10px;
+}
+
+.userStatusContainer {
+  align-items: center;
+  justify-content: center;
+}
+
+.activeUserImg {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.activeUserName {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.rightSidebarTitle {
+  margin-bottom: 7px;
+}
+
+.rightSidebarFriendList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}

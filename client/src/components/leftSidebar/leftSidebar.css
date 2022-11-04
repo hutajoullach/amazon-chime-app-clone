@@ -1,0 +1,70 @@
+.leftSidebar {
+  flex: 2.5;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: #F2F3F5;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(179, 179, 179);
+}
+
+.leftSidebarWrapper {
+  padding: 20px;
+}
+
+.leftSidebarList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.leftSidebarListItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 33px;
+  border-radius: 5px;
+  margin-bottom: 6px;
+  padding-left: 7px;
+  background-color: #14AA52;
+  cursor: pointer;
+}
+
+.leftSidebarListItemText {
+  font-size: 13px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.leftSidebarButton {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  background-color: #00684A;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.leftSidebarButton:hover {
+  background-color: #007A57;
+}
+
+.leftSidebarDivider {
+  border-top: 1px solid hsla(210,calc(var(--saturation-factor, 1)*2.9%),86.7%,.6);
+  margin: 20px 0;
+}
+
+.leftSidebarFriendList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
