@@ -123,4 +123,5 @@
 .topbarSearchIcon {
   color: #93989F;
   margin-right: 3px;
+  user-select: none;
 }

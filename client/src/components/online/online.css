@@ -23,6 +23,7 @@
   height: 31px;
   border-radius: 50%;
   object-fit: cover;
+  user-select: none;
 }
 
 .rightSidebarOnline {
@@ -39,4 +40,5 @@
 
 .rightSidebarUsername {
   font-weight: 500;
+  user-select: none;
 }

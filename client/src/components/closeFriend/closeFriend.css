@@ -13,6 +13,10 @@
   background-color: #D9DEE2;
 }
 
+.leftSidebarFriendName {
+  user-select: none;
+}
+
 /* .leftSidebarFriendImg {
   width: 32px;
   height: 32px;

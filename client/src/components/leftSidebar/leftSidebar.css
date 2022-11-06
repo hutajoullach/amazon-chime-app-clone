@@ -16,6 +16,15 @@
 }
 
 .leftSidebarWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.leftSidebarContainer {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
 }
 
@@ -40,6 +49,7 @@
 .leftSidebarIcon {
   color: #FFFFFF;
   margin-left: 10px;
+  user-select: none;
 }
 
 .leftSidebarListItemText {
@@ -47,6 +57,7 @@
   font-size: 13px;
   font-weight: 500;
   margin-left: 6px;
+  user-select: none;
 }
 
 .leftSidebarButton {
@@ -73,4 +84,91 @@
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.leftSidebarPanel {
+  display: flex;
+  bottom: 0;
+  position: sticky;
+  padding: 6px 0 3px 0;
+  background-color: #EBEDEF;
+}
+
+.leftSidebarPanelContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  padding: 0 8px;
+}
+
+.leftSidebarPanelAvatarWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 5px;
+  height: 41px;
+  width: 100%;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.leftSidebarPanelAvatarWrapper:hover {
+  background-color: #D9DEE2;
+}
+
+.leftSidebarPanelAvatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 35px;
+}
+
+.leftSidebarPanelAvatarIcon {
+  font-size: 35px;
+  color: #4F5660;
+  user-select: none;
+}
+
+.leftSidebarPanelAvatarNameTag {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.leftSidebarPanelAvatarName {
+  font-size: 16px;
+  font-weight: 500;
+  user-select: none;
+  color: #060607;
+}
+
+/* .leftSidebarPanelAvatarUserId {
+  font-size: 13px;
+  color: #4F5660;
+  user-select: none;
+} */
+
+.leftSidebarPanelIcons {
+  display: flex;
+  align-items: flex-end;
+}
+
+.leftSidebarPanelIconItem {
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  height: 35px;
+  width: 35px;
+  color: #4F5660;
+  cursor: pointer;
+}
+
+.leftSidebarPanelIconItem:hover {
+  background-color: #D9DEE2;
 }

@@ -31,6 +31,7 @@
   border-radius: 50%;
   object-fit: cover;
   margin: -1px 15px 15px 15px;
+  user-select: none;
 }
 
 .postContext {

@@ -27,6 +27,7 @@
 
 .rightSidebarTitle {
   margin-bottom: 7px;
+  user-select: none;
 }
 
 .rightSidebarFriendList {
