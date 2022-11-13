@@ -1,9 +1,20 @@
+import { useEffect, useState } from "react";
 import "./leftSidebar.css"
-import { Users } from "../../dummyData";
-import CloseFriend from "../closeFriend/CloseFriend";
+import Channel from "../channel/Channel";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 export default function LeftSidebar() {
+  const [channels, setChannels] = useState([]);
+
+  useEffect(() => {
+    const fetchChannels = async () => {
+      const res = await axios.get("http://localhost:5000/messages/");
+      setChannels(res.data)
+    };
+    fetchChannels();
+  }, [])
+
   return (
     <div className="leftSidebar">
       <div className="leftSidebarWrapper">
@@ -18,11 +29,11 @@ export default function LeftSidebar() {
               <span className="leftSidebarListItemText">Booking</span>
             </li>
           </ul>
-          <button className="leftSidebarButton">Invite Contact</button>
+          <button className="leftSidebarButton">Invite</button>
           <div className="leftSidebarDivider"></div>
           <ul className="leftSidebarFriendList">
-            {Users.map((u) => (
-              <CloseFriend key={u.id} user={u} />
+            {channels.map((c) => (
+              <Channel key={c.id} channel={c} />
             ))}
           </ul>
         </div>

@@ -9,6 +9,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
+      <Route path="/channel/:channelId" element={<Home />} />
       <Route path="/profile/:username" element={<div>profile</div>} />
     </Routes>
   );

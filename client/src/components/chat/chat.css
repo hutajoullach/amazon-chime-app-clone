@@ -1,0 +1,115 @@
+.chat {
+  flex: 7;
+  height: calc(100vh - 50px);
+  overflow-y: scroll;
+  background-color: #FCFCFC;
+}
+
+.chatWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 50px);
+  padding-top: 20px;
+}
+
+.chatForm {
+  bottom: 0;
+  position: sticky;
+  height: 70px;
+  padding: 0 16px;
+  background-color: #FCFCFC;
+}
+
+.chatFormContainer {
+  height: 50px;
+  width: 100%;  
+  border-radius: 8px;
+  background-color: #EBEDEF;
+}
+
+.chatFormInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding-left: 16px;
+}
+
+.chatFormAttachButton {
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  height: 35px;
+  width: 35px;
+  color: #4F5660;
+  cursor: pointer;
+}
+
+.chatFormAttachButton:hover {
+  color: #060607;
+}
+
+.chatFormInputContainer {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  margin-left: 6px;
+}
+
+.chatFormInput {
+  display: flex;
+  align-items: center;
+  padding: 13px 0;
+  height: 100%;
+  width: 100%;
+}
+
+.placeholder {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  user-select: none;
+}
+
+/* span.placeholder[contenteditable]:empty::before {
+  content: attr(data-placeholder);
+  color: #4F5660;
+} */
+
+span.placeholder:empty::before {
+  content: attr(data-placeholder);
+  color: #4F5660;
+}
+
+.chatFormButtons {
+  display: flex;
+  margin-right: 4px;
+}
+
+.chatFormButton {
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  height: 35px;
+  width: 35px;
+  color: #4F5660;
+  cursor: pointer;
+}
+
+.chatFormButton:hover {
+  color: #060607;
+}
+
+.chatUserAssist {
+  height: 20px;
+}

@@ -1,17 +1,20 @@
 import Topbar from "../../components/topbar/Topbar";
 import LeftSidebar from "../../components/leftSidebar/LeftSidebar";
-import Board from "../../components/board/Board";
+import Chat from "../../components/chat/Chat";
 import RightSidebar from "../../components/rightSidebar/RightSidebar";
 import "./home.css"
+import { useParams } from "react-router-dom";
 
 export default function Home() {
+  const { channelId } = useParams();
+
   return (
     <div className="home">
       <LeftSidebar />
       <div className="homeContainer">
-        <Topbar />
+        <Topbar channelId={channelId} />
         <div className="homeContainerBottom">
-          <Board />
+          <Chat channelId={channelId} />
           <RightSidebar />
         </div>
       </div>

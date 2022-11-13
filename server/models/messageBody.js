@@ -63,6 +63,10 @@ const iconCountSchema = mongoose.Schema({
     type: mongoose.SchemaTypes.ObjectId,
     ref: "Icon",
   },
+  clickedBy: {
+    type: mongoose.SchemaTypes.ObjectId,
+    ref: "User",
+  }
 });
 
 const messageSchema = mongoose.Schema(
@@ -102,3 +106,4 @@ export const MessageBody = mongoose.model("MessageBody", messageSchema);
 export const User = mongoose.model("User", userSchema);
 export const Channel = mongoose.model("Channel", channelSchema);
 export const Icon = mongoose.model("Icon", iconSchema);
+export const IconCount = mongoose.model("IconCount", iconCountSchema);

@@ -1,0 +1,45 @@
+.channel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.channelWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 33px;
+  border-radius: 5px;
+  margin-bottom: 2px;
+  padding-left: 7px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.channelWrapper:hover {
+  background-color: #D9DEE2;
+}
+
+.channelIconWrapper {
+  color: #4F5660;
+}
+
+.channelIcon {
+  padding-top: 8px;
+  font-size: 24px;
+  user-select: none;
+}
+
+.channelName {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 8px;
+  width: 100%;
+  height: 100%;
+  color: #4F5660;
+  user-select: none;
+}
+

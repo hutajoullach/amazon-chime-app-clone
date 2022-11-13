@@ -12,6 +12,9 @@ import {
   deleteMessage,
   iconReply,
   createUser,
+  loginUser,
+  getUsers,
+  getUser,
   updateUser,
   deleteUser,
 } from "../controllers/messages.js";
@@ -29,6 +32,9 @@ router.delete("/channel/:channelId/:messageId", deleteMessage);
 router.patch("/channel/:channelId/:messageId/replyMessage", replyMessage);
 router.patch("/channel/:channelId/:messageId/iconReply", iconReply);
 router.post("/signup", createUser);
+router.post("/login", loginUser);
+router.get("/user", getUsers);
+router.get("/user/:userId", getUser);
 router.patch("/user/:userId", updateUser);
 router.delete("/user/:userId", deleteUser);
 

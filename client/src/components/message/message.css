@@ -1,4 +1,4 @@
-.post {
+.message {
   width: 100%;
   /* border-radius: 10px; */
   /* -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
@@ -6,26 +6,26 @@
   margin: 15px 0;
 }
 
-.post:hover {
+.message:hover {
   background-color: #F7F8FA;
 }
 
-.postWapper {
+.messageWapper {
   box-sizing: border-box;
   padding-top: 10px;
 }
 
-.postReplyContext {
+.messageReplyContext {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
 
-.postContents {
+.messageContents {
   display: flex;
 }
 
-.postProfileImg {
+.messageProfileImg {
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -34,27 +34,32 @@
   user-select: none;
 }
 
-.postContext {
+.messageProfileDefaultImg {
+  font-size: 32px;
+  color: #4F5660;
+}
+
+.messageContext {
   display: flex;
   flex-direction: column;
 }
 
-.postUsername {
+.messageUsername {
   font-size: 16px;
   font-weight: 500;
   margin-right: 10px;
 }
 
-.postTimestamp {
+.messageTimestamp {
   font-size: 13px;
 }
 
-.postText {
+.messageText {
   font-size: 15px;
   margin-top: 7px;
 }
 
-.postImg {
+.messageImg {
   margin-top: 20px;
   width: 100%;
   max-height: 500px;

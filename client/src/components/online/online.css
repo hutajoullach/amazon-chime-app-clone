@@ -39,6 +39,12 @@
 }
 
 .rightSidebarUsername {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
   font-weight: 500;
+  padding-bottom: 10px;
+  color: #4F5660;
   user-select: none;
 }
