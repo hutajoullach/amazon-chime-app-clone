@@ -1,9 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import Message from "../message/Message";
 import "./chat.css";
 import axios from "axios";
+import { AuthContext } from "../../context/AuthContext";
 
 export default function Chat({ channelId }) {
+  const { user } = useContext(AuthContext);
   const [messages, setMessages] = useState([]);
 
   useEffect(() => {
@@ -64,7 +66,7 @@ export default function Chat({ channelId }) {
         
         const newMessage = {
           message: userInputText,
-          creator: "635d8cf65d178a55b6cdb92a"
+          creator: user._id
           // selectedFile: null,
           // repliedMessage: null
         }

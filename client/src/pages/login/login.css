@@ -25,10 +25,12 @@
   font-weight: 800;
   color: #00684A;
   margin-bottom: 10px;
+  user-select: none;
 }
 
 .loginDesc {
   font-size: 24px;
+  user-select: none;
 }
 
 .loginBox {
@@ -68,6 +70,7 @@
   text-align: center;
   color: gray;
   cursor: pointer;
+  user-select: none;
 }
 
 .loginRegisterButton {

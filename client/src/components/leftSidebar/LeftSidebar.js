@@ -1,10 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import "./leftSidebar.css"
 import Channel from "../channel/Channel";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { AuthContext } from "../../context/AuthContext";
 
 export default function LeftSidebar() {
+  const { user } = useContext(AuthContext);
   const [channels, setChannels] = useState([]);
 
   useEffect(() => {
@@ -39,13 +41,16 @@ export default function LeftSidebar() {
         </div>
         <div className="leftSidebarPanel">
           <div className="leftSidebarPanelContainer">
-            <Link to="/profile/username" style={{ textDecoration: "none" }}>
+            <Link to={`/profile/${user.username}`} style={{ textDecoration: "none" }}>
               <div className="leftSidebarPanelAvatarWrapper">
                 <div className="leftSidebarPanelAvatar">
-                  <i class="leftSidebarPanelAvatarIcon material-icons">person_pin</i>
+                  {user.thumbnail
+                    ? <img src={ user.thumbnail } className="leftSidebarPanelAvatarIcon" alt="" />
+                    : <i class="leftSidebarPanelAvatarIcon material-icons">person_pin</i>
+                  }
                 </div>
                 <div className="leftSidebarPanelAvatarNameTag">
-                  <span className="leftSidebarPanelAvatarName">Huta Joullach</span>
+                  <span className="leftSidebarPanelAvatarName">{user?.username}</span>
                   {/* <span className="leftSidebarPanelAvatarUserId">#2621</span> */}
                 </div>
               </div>

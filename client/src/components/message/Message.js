@@ -32,8 +32,9 @@ export default function Message({ message }) {
           <div className="messageRepliedTextPreview"></div>
         </div>
         <div className="messageContents">
-          {user?.thumbnail ? <img className="messageProfileImg" src={user?.thumbnail} alt="" /> : 
-            <i class="messageProfileImg messageProfileDefaultImg material-icons">account_circle</i>
+          {user?.thumbnail 
+            ? <img className="messageProfileImg" src={user?.thumbnail} alt="" /> 
+            : <i class="messageProfileImg messageProfileDefaultImg material-icons">account_circle</i>
           }
           <div className="messageContext">
             <div className="messageHeader">

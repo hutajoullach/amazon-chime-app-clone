@@ -1,6 +1,6 @@
-# React, Socket.io, Node.js, Express & MongoDB Amazon Chime Clone App
+# React, Node.js, Express & MongoDB Amazon Chime Clone App
 
-This Amazon Chime Clone App uses React, Socket.io for the frontend and Node.js, Express and MongoDB for the backend server.
+This Amazon Chime Clone App uses React for the frontend and Node.js, Express and MongoDB for the backend server.
 
 ## How to use
 
